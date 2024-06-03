@@ -11,9 +11,9 @@ jobs:
   general-check: 
     runs-on: ubuntu-latest
     steps:
-      -name: General Check
-       uses: actions/checkout@v4
-       
+      - name: General Check
+        uses: actions/checkout@v4
+
   test:
     runs-on: ubuntu-latest
     steps:
