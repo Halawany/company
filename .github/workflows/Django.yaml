@@ -7,9 +7,15 @@ on:
     branches: [ "main" ]
 
 jobs:
+
+  general-check: 
+    runs-on: ubuntu-latest
+    steps:
+      -name: General Check
+       uses: actions/checkout@v4
+       
   test:
     runs-on: ubuntu-latest
-    needs: [docker-build]
     steps:
       - name: check code
         uses: actions/checkout@v4
