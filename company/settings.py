@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # Third part apps
     'rest_framework',
+
+    # Local apps
+    'employees',
 ]
 
 MIDDLEWARE = [
