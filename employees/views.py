@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics 
 
-# Create your views here.
+from .models import Employee
+from .serializers import EmployeeSerializer
+
+class EmployeeView(generics.ListAPIView):
+    queryset = Employee.objects.all()
+    serializer_calss = EmployeeSerializer()
