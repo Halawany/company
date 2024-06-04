@@ -5,4 +5,4 @@ from .serializers import EmployeeSerializer
 
 class EmployeeView(generics.ListAPIView):
     queryset = Employee.objects.all()
-    serializer_calss = EmployeeSerializer()
+    serializer_class = EmployeeSerializer
