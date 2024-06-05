@@ -6,3 +6,7 @@ from .serializers import EmployeeSerializer
 class EmployeeView(generics.ListAPIView):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+
+class EmployeeCreateAPIView(generics.CreateAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
